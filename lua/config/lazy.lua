@@ -20,6 +20,12 @@ require("lazy").setup({
   spec = {
     -- import your plugins
     { import = "plugins" },
+    { "nvim-lua/plenary.nvim" },
+    {
+      dir    = "~/Development/hjz/semhl.nvim",
+      enabled = true,
+      opts   = { "c", "cpp", "h", "python", "lua", "typescript", "java" }
+    },
   },
   defaults = {
     lazy = false,
